@@ -1382,22 +1382,20 @@ static void ProcessBootconfig() {
 }
 
 static void SetSafetyNetProps() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b329ce416 (init: Set properties to make SafetyNet pass)
     InitPropertySet("ro.boot.flash.locked", "1");
     InitPropertySet("ro.boot.vbmeta.device_state", "locked");
     InitPropertySet("ro.boot.verifiedbootstate", "green");
     InitPropertySet("ro.boot.veritymode", "enforcing");
+<<<<<<< HEAD
     InitPropertySet("ro.boot.warranty_bit", "0");
-    InitPropertySet("ro.warranty_bit", "0");
-    InitPropertySet("ro.debuggable", "0");
-    InitPropertySet("ro.secure", "1");
-    InitPropertySet("ro.build.type", "user");
-    InitPropertySet("ro.build.keys", "release-keys");
     InitPropertySet("ro.build.tags", "release-keys");
-    InitPropertySet("ro.system.build.tags", "release-keys");
-    InitPropertySet("ro.vendor.boot.warranty_bit", "0");
-    InitPropertySet("ro.vendor.warranty_bit", "0");
-    InitPropertySet("vendor.boot.vbmeta.device_state", "locked");
-    InitPropertySet("vendor.boot.verifiedbootstate", "green");
+=======
+
+>>>>>>> 8b329ce416 (init: Set properties to make SafetyNet pass)
 }
 
 void PropertyInit() {
